@@ -1,11 +1,515 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link href="css/style.css">
-    <title>My Page</title>
-  </head>
-  <body>
-    <h1>This is my page</h1>
-  </body>
-  <script src="js/main.js"></script>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Brian Francisco is a Web Developer interested in creating interactive web applications." />
+  <meta name="keywords" content="Brian Francisco, HTML, CSS, Javascript, jQuery, web developer, web development, portfolio, freelance, profile, ibrianfrancisco" />
+  <meta name="author" content="Brian Francisco" />
+  <title>Brian Francisco Web Developer - Anaheim, CA</title>
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<div class="gtco-loader"></div>
+
+	<div id="page">
+	<nav class="gtco-nav" role="navigation">
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-sm-2 col-xs-12">
+					<div id="gtco-logo"><a href="#">BF <em>.</em></a></div>
+				</div>
+				<div class="col-xs-10 text-right menu-1 main-nav">
+					<ul>
+						<li class="active"><a href="#welcome" data-nav-section="home">Home</a></li>
+						<li><a href="#about" data-nav-section="about">Profile</a></li>
+						<li><a href="#experience" data-nav-section="experience">Experience</a></li>
+						<li><a href="#projects" data-nav-section="projects">Projects</a></li>
+						<li><a href="#contact" data-nav-section="contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</nav>
+
+	<div id="gtco-hero" class="js-fullheight"  data-section="home">
+		<div class="flexslider js-fullheight">
+			<ul class="slides">
+		   	<li style="background-image: url(images/brian-cover.jpg);">
+		   		<div class="overlay"></div>
+		   		<div class="container">
+		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
+		   				<div class="slider-text-inner main-nav">
+		   					<h2 style="margin: 0;"><b>Brian Francisco.</b></h2>
+                <h2 style="font-size: 22px; margin-bottom: 35px; color: #c7a674; font-weight: bold;">Web Developer</h2>
+		   					<p><a href="#" data-nav-section="about" class="btn btn-primary btn-lg">Get to know me</a></p>
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</li>
+	  	</ul>
+  	</div>
+	</div>
+
+	<div class="gtco-section-overflow">
+
+		<div class="gtco-section" id="gtco-services" data-section="about">
+			<div class="gtco-container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 gtco-heading">
+						<h2 class="text-center">About Me</h2>
+						<p>Before starting GA, I had trouble understanding certain concepts in programming. All I knew coming in was being highly
+            interested in the subject and very eager to learn. Throughout the program however, I worked with incredible people with
+            like-minded aspirations that pushed me to get better. GA taught me the fundamentals of programming. Coming out, I've gained
+            a strong interest in front-end technologies and feel much more confidant knowing how to design and build future applications.</p>
+            <p>With an interest in front-end technologies in mind, I will continue to develop my skills and become a better problem solver in the process.</p>
+            <!-- <button class="btn btn-primary btn-md">Download Resume</button> -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="gtco-section" id="gtco-portfolio" data-section="experience" style="background-color: #fafafa;">
+			<div class="gtco-container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+						<h2>Experience</h2>
+						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					</div>
+				</div>
+				<div class="row">
+<!-- 					<div class="col-md-4">
+						<a href="images/img_2.jpg" class="gtco-card-item image-popup" title="Project name here.">
+							<figure>
+								<div class="overlay"><i class="ti-plus"></i></div>
+								<img src="images/img_2.jpg" alt="Image" class="img-responsive">
+							</figure>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="images/img_1.jpg" class="gtco-card-item image-popup" title="Project name here.">
+							<figure>
+								<div class="overlay"><i class="ti-plus"></i></div>
+								<img src="images/img_1.jpg" alt="Image" class="img-responsive">
+							</figure>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="images/img_3.jpg" class="gtco-card-item image-popup" title="Project name here.">
+							<figure>
+								<div class="overlay"><i class="ti-plus"></i></div>
+								<img src="images/img_3.jpg" alt="Image" class="img-responsive">
+							</figure>
+						</a>
+					</div>
+
+					<div class="col-md-4">
+						<a href="images/img_4.jpg" class="gtco-card-item image-popup" title="Project name here.">
+							<figure>
+								<div class="overlay"><i class="ti-plus"></i></div>
+								<img src="images/img_4.jpg" alt="Image" class="img-responsive">
+							</figure>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="images/img_5.jpg" class="gtco-card-item image-popup" title="Project name here.">
+							<figure>
+								<div class="overlay"><i class="ti-plus"></i></div>
+								<img src="images/img_5.jpg" alt="Image" class="img-responsive">
+							</figure>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="images/img_6.jpg" class="gtco-card-item image-popup" title="Project name here.">
+							<figure>
+								<div class="overlay"><i class="ti-plus"></i></div>
+								<img src="images/img_6.jpg" alt="Image" class="img-responsive">
+							</figure>
+						</a>
+					</div>
+
+					<div class="col-md-4">
+						<a href="images/img_2.jpg" class="gtco-card-item image-popup" title="Project name here.">
+							<figure>
+								<div class="overlay"><i class="ti-plus"></i></div>
+								<img src="images/img_2.jpg" alt="Image" class="img-responsive">
+							</figure>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="images/img_1.jpg" class="gtco-card-item image-popup" title="Project name here.">
+							<figure>
+								<div class="overlay"><i class="ti-plus"></i></div>
+								<img src="images/img_1.jpg" alt="Image" class="img-responsive">
+							</figure>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="images/img_3.jpg" class="gtco-card-item image-popup" title="Project name here.">
+							<figure>
+								<div class="overlay"><i class="ti-plus"></i></div>
+								<img src="images/img_3.jpg" alt="Image" class="img-responsive">
+							</figure>
+						</a>
+					</div> -->
+
+				</div> <!-- row end -->
+			</div>
+		</div>
+<!--
+		<div class="gtco-section" id="gtco-faq" data-section="faq">
+			<div class="gtco-container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+						<h2>Frequently Ask Questions</h2>
+						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+
+						<div class="gtco-accordion">
+							<div class="gtco-accordion-heading">
+								<div class="icon"><i class="icon-cross"></i></div>
+								<h3>What is Asymmetry?</h3>
+							</div>
+							<div class="gtco-accordion-content">
+								<div class="inner">
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								</div>
+							</div>
+						</div>
+						<div class="gtco-accordion">
+							<div class="gtco-accordion-heading">
+								<div class="icon"><i class="icon-cross"></i></div>
+								<h3>I have technical problem, who do I email?</h3>
+							</div>
+							<div class="gtco-accordion-content">
+								<div class="inner">
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								</div>
+							</div>
+						</div>
+						<div class="gtco-accordion">
+							<div class="gtco-accordion-heading">
+								<div class="icon"><i class="icon-cross"></i></div>
+								<h3>How do I use Asymmetry features?</h3>
+							</div>
+							<div class="gtco-accordion-content">
+								<div class="inner">
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-md-6">
+
+						<div class="gtco-accordion">
+							<div class="gtco-accordion-heading">
+								<div class="icon"><i class="icon-cross"></i></div>
+								<h3>What language are available?</h3>
+							</div>
+							<div class="gtco-accordion-content">
+								<div class="inner">
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								</div>
+							</div>
+						</div>
+						<div class="gtco-accordion">
+							<div class="gtco-accordion-heading">
+								<div class="icon"><i class="icon-cross"></i></div>
+								<h3>Can I have a username that is already taken?</h3>
+							</div>
+							<div class="gtco-accordion-content">
+								<div class="inner">
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								</div>
+							</div>
+						</div>
+						<div class="gtco-accordion">
+							<div class="gtco-accordion-heading">
+								<div class="icon"><i class="icon-cross"></i></div>
+								<h3>Is Asymmetry free?</h3>
+							</div>
+							<div class="gtco-accordion-content">
+								<div class="inner">
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+	</div>
+
+	<div id="gtco-blog" data-section="projects">
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+					<h2>Projects</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="https://github.com/ibrianfrancisco/Blackjack_Project" target="_blank" class="gtco-card-item has-text">
+						<figure>
+							<div class="overlay"><i class="icon-github"></i></div>
+							<img src="images/project-1.png" alt="Image" class="img-responsive">
+						</figure>
+						<div class="gtco-text text-left">
+							<h2>BlackJack</h2>
+							<p>First project and experience building an app from the ground up.
+              Created a functional blackjack game with betting included.</p>
+							<p class="gtco-category">December 2016</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-sm-3">
+					<a href="#" target="_blank" class="gtco-card-item has-text">
+						<figure>
+							<div class="overlay"><i class="icon-github"></i></div>
+							<img src="images/img_3.jpg" alt="Image" class="img-responsive">
+						</figure>
+						<div class="gtco-text text-left">
+							<h2>Climb On Community</h2>
+							<p>Blogging website intended for rock climbers. Users
+              can upload photos, post about various trips that they went on and follow one another.</p>
+							<p class="gtco-category">January 2017</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-sm-3">
+					<a href="#" target="_blank" class="gtco-card-item has-text">
+						<figure>
+							<div class="overlay"><i class="icon-github"></i></div>
+							<img src="images/img_4.jpg" alt="Image" class="img-responsive">
+						</figure>
+						<div class="gtco-text text-left">
+							<h2>25 Minimal Web Design for Inspiration</h2>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+							<p class="gtco-category">Sep. 25th, 2016 by John Doe</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-sm-3">
+					<a href="#" target="_blank" class="gtco-card-item has-text">
+						<figure>
+							<div class="overlay"><i class="icon-github"></i></div>
+							<img src="images/img_6.jpg" alt="Image" class="img-responsive">
+						</figure>
+						<div class="gtco-text text-left">
+							<h2>25 Minimal Web Design for Inspiration</h2>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+							<p class="gtco-category">Sep. 25th, 2016 by John Doe</p>
+						</div>
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="gtco-section-overflow">
+<!-- 		<div id="gtco-counter" class="gtco-section">
+			<div class="gtco-container">
+
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+						<h2>Fun Facts</h2>
+						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					</div>
+				</div>
+
+				<div class="row">
+
+					<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+						<div class="feature-center">
+							<span class="icon">
+								<i class="ti-download"></i>
+							</span>
+							<span class="counter js-counter" data-from="0" data-to="2122070" data-speed="5000" data-refresh-interval="50">1</span>
+							<span class="counter-label">Downloads</span>
+
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+						<div class="feature-center">
+							<span class="icon">
+								<i class="ti-face-smile"></i>
+							</span>
+							<span class="counter js-counter" data-from="0" data-to="402002" data-speed="5000" data-refresh-interval="50">1</span>
+							<span class="counter-label">Happy Clients</span>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+						<div class="feature-center">
+							<span class="icon">
+								<i class="ti-briefcase"></i>
+							</span>
+							<span class="counter js-counter" data-from="0" data-to="402" data-speed="5000" data-refresh-interval="50">1</span>
+							<span class="counter-label">Projects Done</span>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+						<div class="feature-center">
+							<span class="icon">
+								<i class="ti-time"></i>
+							</span>
+							<span class="counter js-counter" data-from="0" data-to="212023" data-speed="5000" data-refresh-interval="50">1</span>
+							<span class="counter-label">Hours Spent</span>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div> -->
+
+<!-- 		<div id="gtco-products" data-section="products">
+			<div class="gtco-container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+						<h2>Products</h2>
+						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="owl-carousel owl-carousel-carousel">
+						<div class="item">
+							<img src="images/img_1.jpg" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+						</div>
+						<div class="item">
+							<img src="images/img_2.jpg" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+						</div>
+						<div class="item">
+							<img src="images/img_3.jpg" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+						</div>
+						<div class="item">
+							<img src="images/img_4.jpg" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+	</div>
+
+
+	<div id="gtco-subscribe" data-section="contact" style="background-color: #fafafa;">
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+					<h2>Get In Touch!</h2>
+          <h3>Got a project or opportunity you'd like to discuss? Let's Talk!</h3>
+				</div>
+			</div>
+			<form class="form-inline">
+        <div class="row">
+					<div class="col-md-4 col-md-offset-2 col-sm-6">
+						<div class="form-group">
+							<label for="name" class="sr-only">Name</label>
+							<input type="text" class="form-control" id="name" placeholder="Name">
+						</div>
+					</div>
+          <div class="col-md-4 col-sm-6">
+            <div class="form-group">
+              <label for="email" class="sr-only">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+          </div>
+  			</div>
+        <br>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 col-sm-12">
+            <div class="form-group">
+              <textarea rows="5" placeholder="How can I help?" name="message" class="form-control"></textarea>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="text-center">
+          <button type="submit" class="btn btn-danger">Send It</button>
+        </div>
+      </form>
+		</div>
+	</div>
+
+<!-- 	<div id="gtco-contact" data-section="contact" class="gtco-cover gtco-cover-xs" style="background-image:url(images/img_bg_2.jpg);">
+		<div class="overlay"></div>
+		<div class="gtco-container">
+			<div class="row text-center">
+				<div class="display-t">
+					<div class="display-tc">
+						<div class="col-md-12">
+							<h3>If you have inqueries please email us at <a href="#">ibrianfrancisco@gmail.com</a></h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+
+	<footer id="gtco-footer" role="contentinfo">
+		<div class="gtco-container">
+
+			<div class="row copyright">
+				<div class="col-md-12">
+					<p class="pull-left">
+						<!-- <small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small> -->
+						<!-- <small class="block">Designed by <a href="http://gettemplates.co/" target="_blank">GetTemplates.co</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a></small> -->
+            <ul class="gtco-social-icons pull-left">
+              <li><a href="#"><i class="icon-twitter"></i></a></li>
+              <li><a href="#"><i class="icon-linkedin"></i></a></li>
+              <li><a href="#"><i class="icon-github"></i></a></li>
+            </ul>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.countTo.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
 </html>
