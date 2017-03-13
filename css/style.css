@@ -2085,8 +2085,8 @@ form label {
   position: relative;
 }
 .gtco-section .row h2 p {
-  font-size: 16px;
-  margin: 10px 0;
+  font-size: 16px !important;
+  margin: 10px 0 !important;
 }
 
 #gtco-services .feature-left .icon i {
