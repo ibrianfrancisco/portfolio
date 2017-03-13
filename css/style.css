@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   .gtco-nav {
-    padding: 20px 0;
+    padding: 4px 0;
   }
 }
 .gtco-nav #gtco-logo {
@@ -500,6 +500,21 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0;
   padding: 0;
 }
+.copyright h1 {
+  color: #AF9272;
+  font-size: 56px;
+  margin-bottom: 1em;
+}
+.copyright h1:before {
+  position: absolute;
+  bottom: 97px;
+  content: "";
+  width: 50px;
+  margin-left: -25px;
+  height: 2px;
+  left: 50%;
+  background: #fff;
+}
 .gtco-social-icons li {
   margin: 0;
   padding: 0;
@@ -519,7 +534,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding-right: 10px;
 }
 .gtco-social-icons li a i {
-  font-size: 20px;
+  font-size: 28px;
 }
 
 .gtco-contact-info {
@@ -660,7 +675,7 @@ form label {
 #gtco-footer,
 #gtco-faq,
 .gtco-section {
-  padding: 3em 0;
+  padding: 5em 0;
   clear: both;
   position: relative;
 }
@@ -672,7 +687,7 @@ form label {
   #gtco-footer,
   #gtco-faq,
   .gtco-section {
-    padding: 2em 0;
+    padding: 4em 0;
   }
 }
 #gtco-features.border-bottom,
@@ -807,7 +822,7 @@ form label {
 }
 @media screen and (max-width: 768px) {
   .gtco-heading p {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 
@@ -1005,10 +1020,10 @@ form label {
   transform: translateX(0px);
 }
 #gtco-offcanvas a {
-  color: rgba(255, 255, 255, 0.5);
+  color: #fff
 }
 #gtco-offcanvas a:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: #AF9272
 }
 #gtco-offcanvas ul {
   padding: 0;
@@ -1107,7 +1122,7 @@ form label {
   text-decoration: none;
 }
 .gtco-nav-toggle.active i::before, .gtco-nav-toggle.active i::after {
-  background: #444;
+  background: #fff;
 }
 .gtco-nav-toggle:hover, .gtco-nav-toggle:focus, .gtco-nav-toggle:active {
   outline: none;
@@ -1122,14 +1137,14 @@ form label {
   font: bold 14px/.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
-  background: #252525;
+  background: #fff;
   transition: all .2s ease-out;
 }
 .gtco-nav-toggle i::before, .gtco-nav-toggle i::after {
   content: '';
   width: 25px;
   height: 2px;
-  background: #252525;
+  background: #fff;
   position: absolute;
   left: 0;
   transition: all .2s ease-out;
@@ -1584,8 +1599,9 @@ form label {
   float: left;
 }
 
-#gtco-blog {
-  padding: 3em 0;
+#gtco-blog,
+#gtco-portfolio {
+  padding: 3.5em 0;
 }
 
 .gtco-card-item {
@@ -2053,7 +2069,7 @@ form label {
 }
 @media screen and (max-width: 768px) {
   #gtco-hero .flexslider .slider-text > .slider-text-inner h2 {
-    font-size: 40px;
+    font-size: 50px;
   }
 }
 #gtco-hero .flexslider .slider-text > .slider-text-inner .gtco-lead {
@@ -2067,6 +2083,10 @@ form label {
 .gtco-section-overflow {
   overflow: hidden;
   position: relative;
+}
+.gtco-section .row h2 p {
+  font-size: 16px;
+  margin: 10px 0;
 }
 
 #gtco-services .feature-left .icon i {
