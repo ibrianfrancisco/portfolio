@@ -1970,9 +1970,14 @@ form label {
 #gtco-hero .flexslider .slides li {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: 75% 25%;
   min-height: 700px;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  #gtco-hero .flexslider .slides li {
+    background-position: center center;
+  }
 }
 #gtco-hero .flexslider .slides li .overlay {
   position: absolute;
@@ -2086,7 +2091,13 @@ form label {
 }
 .gtco-section .row h2 p {
   font-size: 16px !important;
-  margin: 10px 0 !important;
+  margin: 15px 0 !important;
+  line-height: 20px;
+}
+.gtco-section .row h2 .experience-header {
+  font-size: 20px !important;
+  margin-bottom: 0 !important;
+  font-weight: bold;
 }
 
 #gtco-services .feature-left .icon i {
