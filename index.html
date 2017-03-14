@@ -9,6 +9,7 @@
   <meta name="keywords" content="Brian Francisco, HTML, CSS, Javascript, jQuery, web developer, web development, portfolio, freelance, profile, ibrianfrancisco" />
   <meta name="author" content="Brian Francisco" />
   <title>Brian Francisco Web Developer - Anaheim, CA</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/themify-icons.css">
@@ -53,7 +54,7 @@
 	<div id="gtco-hero" class="js-fullheight"  data-section="home">
 		<div class="flexslider js-fullheight">
 			<ul class="slides">
-		   	<li style="background-image: url(images/brian-cover2.JPG); top: 57px;">
+		   	<li style="background-image: url(images/brian-cover2.png); top: 57px;">
 		   		<div class="overlay"></div>
 		   		<div class="container">
 		   			<div class="col-md-10 col-md-offset-1 col-xs-12 text-center js-fullheight slider-text">
@@ -99,15 +100,15 @@
           </div>
         </div>
         <div class="row">
-          <h2 class="col-md-3 col-md-offset-3 text-center">Education
-            <p>General Assembly</p>
+          <h2 class="col-md-3 col-md-offset-3 text-center col-xs-6">Education
+            <p class="experience-header">General Assembly</p>
             <p><i>Web Development Immersive</i></p>
             <p><i>2017</i></p>
-            <p>California State University, San Bernardino</p>
+            <p class="experience-header">California State University, San Bernardino</p>
             <p><i>Bachelor's Degree, Marketing</i></p>
             <p><i>2013</i></p>
           </h2>
-          <h2 class="col-md-3 text-center">Tech Skills
+          <h2 class="col-md-3 text-center col-xs-6">Tech Skills
             <p>HTML / EJS</p>
             <p>CSS / Scss</p>
             <p>JavaScript / jQuery</p>
@@ -120,15 +121,15 @@
           <div class="col-md-3">&nbsp</div>
         </div>
         <div class="row">
-          <h2 class="col-md-3 col-md-offset-3 text-center">Work Experience
-            <p>Fox Event Center</p>
+          <h2 class="col-md-3 col-md-offset-3 text-center col-xs-6">Work Experience
+            <p class="experience-header">Fox Event Center</p>
             <p><i>Social Media Coordinator Intern</i></p>
             <p><i>2013</i></p>
-            <p>Gyu-Kaku Japanese BBQ</p>
+            <p class="experience-header">Gyu-Kaku Japanese BBQ</p>
             <p><i>Restaurant Server</i></p>
             <p><i>2012 - 2017</i></p>
           </h2>
-          <h2 class="col-md-3 text-center">Other Skills
+          <h2 class="col-md-3 text-center col-xs-6">Other Skills
             <p>Git / Github</p>
             <p>Marketing</p>
             <p>Sales</p>
@@ -219,20 +220,21 @@
 				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
 					<h2>Get In Touch!</h2>
           <h3>Got a project or opportunity you'd like to discuss? Let's Talk!</h3>
+          <h4>Fill out the form below or reach me directly at <a href="mailto:ibrianfrancisco@gmail.com?Subject=Hey%20Brian" target="_top"">ibrianfrancisco@gmail.com</a>.</h4>
 				</div>
 			</div>
-			<form class="form-inline">
+			<form class="form-inline" role="form">
         <div class="row">
 					<div class="col-md-4 col-md-offset-2 col-sm-6">
 						<div class="form-group">
 							<label for="name" class="sr-only">Name</label>
-							<input type="text" class="form-control" id="name" placeholder="Name">
+							<input type="text" class="form-control" id="name" placeholder="Name" name="name">
 						</div>
 					</div>
           <div class="col-md-4 col-sm-6">
             <div class="form-group">
               <label for="email" class="sr-only">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Email">
+              <input type="email" class="form-control" id="email" placeholder="Email" name="email">
             </div>
           </div>
   			</div>
@@ -246,7 +248,7 @@
         </div>
         <br>
         <div class="text-center">
-          <button type="submit" class="btn btn-danger">Send It</button>
+          <button type="submit" id="submit" class="btn btn-danger">Send It</button>
         </div>
       </form>
 		</div>
