@@ -60,7 +60,7 @@
 			var section = $(this).data('nav-section');
 				if ( $('[data-section="' + section + '"]').length ) {
 			    	$('html, body').animate({
-			        	scrollTop: $('[data-section="' + section + '"]').offset().top - 55
+			        	scrollTop: $('[data-section="' + section + '"]').offset().top - 30
 			    	}, 500, 'easeInOutExpo');
 			   }
 
