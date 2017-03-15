@@ -372,6 +372,18 @@
 
 	};
 
+  var coverImgHover = function(){
+      $('#about').mouseenter(function(){
+
+          $('#cover-image')
+          .css('background-image', 'url(images/brian-cover.png)')
+
+      }).mouseleave(function(){
+
+          $('#cover-image')
+          .css('background-image', 'url(images/brian-cover2.png)')
+      });
+    };
 
 	$(function(){
 		fullHeight();
@@ -389,6 +401,7 @@
 		counterWayPoint();
 		accordion();
 		sliderMain();
+    coverImgHover();
 	});
 
 
