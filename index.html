@@ -30,7 +30,7 @@
 		<div class="gtco-container">
 			<div class="row">
 				<div class="col-sm-2 col-xs-12">
-					<div id="gtco-logo"><a href="#" class="js-gotop">BF <em>.</em></a></div>
+					<div id="gtco-logo"><a href="#welcome" class="js-gotop">BF <em>.</em></a></div>
 				</div>
 				<div class="col-xs-10 text-right menu-1 main-nav">
 					<ul>
@@ -49,14 +49,14 @@
 	<div id="gtco-hero" class="js-fullheight"  data-section="home">
 		<div class="flexslider js-fullheight">
 			<ul class="slides">
-		   	<li style="background-image: url(images/brian-cover2.png); top: 57px;">
+		   	<li id="cover-image" style="background-image: url(images/brian-cover2.png); display: none; top: 57px;">
 		   		<div class="overlay"></div>
 		   		<div class="container">
 		   			<div class="col-md-10 col-md-offset-1 col-xs-12 text-center js-fullheight slider-text">
 		   				<div class="slider-text-inner main-nav">
 		   					<h2 style="margin: 0;"><b>Brian Francisco</b></h2>
                 <h2 style="font-size: 22px; margin-bottom: 35px; color: #c7a674; font-weight: bold;">Web Developer</h2>
-		   					<p><a href="#" data-nav-section="about" class="btn btn-primary btn-lg">Get to know me</a></p>
+		   					<p><a href="#about" data-nav-section="about" id="about" class="btn btn-primary btn-lg">Get to know me</a></p>
 		   				</div>
 		   			</div>
 		   		</div>
@@ -74,16 +74,17 @@
 						<h2 class="text-center">About Me</h2>
 						<p>I’m a web developer who recently graduated from General Assembly’s WDI course where I spent 12 weeks fully immersed in learning
             different skills such as JavaScript, Ruby on Rails, the MEAN Stack and much more. Not only did I learn the fundamentals of web
-            development, more importantly, I learned how to teach myself new technologies and remain motivated while doing so.
+            development, more importantly, I learned how to teach myself new technologies and remain motivated while doing so.</p>
 
             <p>Before GA, I spent my time acquiring a B.S. in Marketing and creatively expressing myself through dance. Just like in dance, the ability to create something
-            out of nothing constantly challenged my creative side and made me a better problem solver. My experience in marketing has taught me to
+            out of nothing constantly challenges my creative side and makes me a better problem solver. My experience in marketing taught me to
             keep the user's wants and needs in mind and I plan to do that when I help build or maintain any future applications. Using what I've learned from my past
             experiences, I hope to continue growing towards front-end technologies as a Front-End Web Developer.</p>
 
             <form method="get" action="Resume.doc">
               <button type="submit" class="btn btn-primary btn-md">Download Resume</button>
             </form>
+
 					</div>
 				</div>
 			</div>
@@ -217,7 +218,7 @@
 				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
 					<h2>Get In Touch!</h2>
           <h3>Got a project or opportunity you'd like to discuss? Let's Talk!</h3>
-          <h4>Fill out the form below or reach me directly at <a href="mailto:ibrianfrancisco@gmail.com?Subject=Hey%20Brian" target="_top"">ibrianfrancisco@gmail.com</a>.</h4>
+          <h4>Fill out the form below or reach me directly at <a href="mailto:ibrianfrancisco@gmail.com?Subject=Hey%20Brian" target="_top"">ibrianfrancisco@gmail.com</a></h4>
 				</div>
 			</div>
 			<form class="form-inline" role="form" method="POST" action="http://formspree.io/ibrianfrancisco@gmail.com">
@@ -225,13 +226,13 @@
 					<div class="col-md-4 col-md-offset-2 col-sm-6">
 						<div class="form-group">
 							<label for="name" class="sr-only">Name</label>
-							<input type="text" class="form-control" id="name" placeholder="Name" name="name">
+							<input type="text" class="form-control" id="name" placeholder="Name" name="name" required>
 						</div>
 					</div>
           <div class="col-md-4 col-sm-6">
             <div class="form-group">
               <label for="email" class="sr-only">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+              <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
             </div>
           </div>
   			</div>
@@ -239,7 +240,7 @@
         <div class="row">
           <div class="col-md-8 col-md-offset-2 col-sm-12">
             <div class="form-group">
-              <textarea rows="5" placeholder="How can I help?" name="message" class="form-control"></textarea>
+              <textarea rows="5" placeholder="How can I help?" name="message" class="form-control" required></textarea>
             </div>
           </div>
         </div>
@@ -258,9 +259,9 @@
 				<div class="col-md-12">
           <ul class="gtco-social-icons text-center">
             <h1>Follow Me</h1>
-            <li><a href="https://www.linkedin.com/in/ibrianfrancisco/"><i class="icon-linkedin"></i></a></li>
-            <li><a href="https://www.github.com/ibrianfrancisco/"><i class="icon-github"></i></a></li>
-            <li><a href="https://www.instagram.com/ibrianfrancisco"><i class="icon-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/ibrianfrancisco/" target="_blank"><i class="icon-linkedin"></i></a></li>
+            <li><a href="https://www.github.com/ibrianfrancisco/" target="_blank"><i class="icon-github"></i></a></li>
+            <li><a href="https://www.instagram.com/ibrianfrancisco" target="_blank"><i class="icon-instagram"></i></a></li>
             <small class="block">&copy;2017 Brian Francisco</small>
           </ul>
 				</div>

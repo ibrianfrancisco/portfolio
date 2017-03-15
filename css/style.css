@@ -1973,6 +1973,9 @@ form label {
   background-position: 75% 25%;
   min-height: 700px;
   position: relative;
+  -webkit-transition: .7s;
+  -o-transition: .7s;
+  transition: .7s;
 }
 @media screen and (max-width: 768px) {
   #gtco-hero .flexslider .slides li {
