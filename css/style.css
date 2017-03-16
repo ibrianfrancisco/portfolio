@@ -144,7 +144,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.gtco-nav ul li a:hover, .gtco-nav ul li a:focus, .gtco-nav ul li a:active {
+.gtco-nav ul li a:hover {
   color: #AF9272;
 }
 .gtco-nav ul li.has-dropdown {
@@ -359,108 +359,57 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .gtco-cover {
-  height: 900px;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  height: 100%
+  width: 100%;
   position: relative;
-  float: left;
+  padding: 4.5em 0;
+}
+.interest-box {
+  height: 100%;
   width: 100%;
+  background-color: #fff;
+  padding: 30px 20px;
+  border-top: #fff 2px solid;
 }
-.gtco-cover a {
-  color: #AF9272;
+.interest-box:hover {
+  border-top: #000 2px solid;
+  transition: border-color .5s ease;
 }
-.gtco-cover a:hover {
-  color: white;
+.interest-box h2 {
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px 0;
+  color: #1a1a1a;
 }
-.gtco-cover .overlay {
-  z-index: 1;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: rgba(35, 35, 35, 0.5);
+.interest-box p {
+  font-size: 14px;
+  color: #515769;
+  text-align: center;
+  line-height: 24px;
+  letter-spacing: 1px;
 }
-.gtco-cover > .gtco-container {
-  position: relative;
-  z-index: 10;
+.interest-box p span {
+  font-size: 8px;
+  font-style: italic;
 }
-@media screen and (max-width: 768px) {
-  .gtco-cover {
-    height: 600px;
+.interest-icon-box {
+  text-align: center;
+}
+.interest-icon {
+  width: 50px;
+  height: 100%;
+}
+@media only screen and (max-width: 991px) and (min-width: 767px) {
+  .interest-box {
+    margin-bottom: 30px;
   }
 }
-.gtco-cover .display-t,
-.gtco-cover .display-tc {
-  height: 900px;
-  display: table;
-  width: 100%;
-}
-@media screen and (max-width: 768px) {
-  .gtco-cover .display-t,
-  .gtco-cover .display-tc {
-    height: 600px;
+@media only screen and (max-width: 767px) {
+  .interest-box {
+    margin-bottom: 30px;
   }
-}
-.gtco-cover.gtco-cover-sm {
-  height: 600px;
-}
-@media screen and (max-width: 768px) {
-  .gtco-cover.gtco-cover-sm {
-    height: 400px;
-  }
-}
-.gtco-cover.gtco-cover-sm .display-t,
-.gtco-cover.gtco-cover-sm .display-tc {
-  height: 600px;
-  display: table;
-  width: 100%;
-}
-@media screen and (max-width: 768px) {
-  .gtco-cover.gtco-cover-sm .display-t,
-  .gtco-cover.gtco-cover-sm .display-tc {
-    height: 400px;
-  }
-}
-.gtco-cover.gtco-cover-xs {
-  height: 500px;
-}
-@media screen and (max-width: 768px) {
-  .gtco-cover.gtco-cover-xs {
-    height: inherit !important;
-    padding: 3em 0;
-  }
-}
-.gtco-cover.gtco-cover-xs .display-t,
-.gtco-cover.gtco-cover-xs .display-tc {
-  height: 500px;
-  display: table;
-  width: 100%;
-}
-@media screen and (max-width: 768px) {
-  .gtco-cover.gtco-cover-xs .display-t,
-  .gtco-cover.gtco-cover-xs .display-tc {
-    padding: 3em 0;
-    height: inherit !important;
-  }
-}
-.gtco-cover.gtco-cover-xxs {
-  padding: 3em 0;
-}
-.gtco-cover .btn-primary {
-  color: #fff !important;
-}
-
-#gtco-counter .feature-center {
-  background: #fff;
-  padding: 30px;
-  margin-bottom: 30px;
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
-  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
-  -ms-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
-  -o-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
 }
 
 .gtco-staff {
@@ -1249,9 +1198,13 @@ form label {
   color: #fff;
   border: 2px solid #fff !important;
 }
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+.btn-primary:hover {
   background: #AF9272 !important;
   border-color: #AF9272 !important;
+}
+.btn-primary:focus, .btn-primary:active {
+  background: transparent;
+  border-color: #fff;
 }
 .btn-primary.btn-outline {
   background: transparent;
@@ -1973,9 +1926,9 @@ form label {
   background-position: 75% 25%;
   min-height: 700px;
   position: relative;
-  -webkit-transition: .7s;
-  -o-transition: .7s;
-  transition: .7s;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
 }
 @media screen and (max-width: 768px) {
   #gtco-hero .flexslider .slides li {
