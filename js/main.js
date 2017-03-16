@@ -385,6 +385,8 @@
       });
     };
 
+  $('<img />').attr('src','images/brian-cover.png').appendTo('body').css('display','none');
+
 	$(function(){
 		fullHeight();
 		mobileMenuOutsideClick();
