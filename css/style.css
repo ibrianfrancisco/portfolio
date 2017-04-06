@@ -1192,6 +1192,9 @@ form label {
   outline: none !important;
   color: #fff;
 }
+#resume-btn:focus {
+  color: #000;
+}
 
 .btn-primary {
   background: transparent;
