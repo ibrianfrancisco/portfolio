@@ -1,0 +1,31 @@
+{
+  "name": "ibrianfrancisco.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "browser-sync": "^2.18.12",
+    "browserify": "^14.4.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp": "^3.9.1",
+    "jquery": "^3.2.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibrianfrancisco/ibrianfrancisco.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ibrianfrancisco/ibrianfrancisco.github.io/issues"
+  },
+  "homepage": "https://github.com/ibrianfrancisco/ibrianfrancisco.github.io#readme"
+}
