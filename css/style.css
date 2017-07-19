@@ -1605,14 +1605,14 @@ form label {
   -o-transition: 0.7s;
   transition: 0.7s;
 }
-.gtco-card-item figure .overlay i {
+.gtco-card-item figure .overlay a {
   z-index: 12;
   color: #fff;
-  font-size: 30px;
-  position: absolute;
-  margin-left: -15px;
-  margin-top: -45px;
-  top: 50%;
+  font-size: 36px;
+  display: block;
+  position: relative;
+  margin: -45px 0 30px -15px;
+  top: calc(50% - 30px);
   left: 50%;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -1712,7 +1712,7 @@ form label {
   opacity: 1;
   visibility: visible;
 }
-.gtco-card-item:hover figure .overlay i, .gtco-card-item:focus figure .overlay i {
+.gtco-card-item:hover figure .overlay a, .gtco-card-item:focus figure .overlay a {
   margin-top: -15px;
 }
 .gtco-card-item:hover h2, .gtco-card-item:hover span, .gtco-card-item:focus h2, .gtco-card-item:focus span {
