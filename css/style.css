@@ -21,6 +21,13 @@ body {
   background: #fff;
 }
 
+.group {
+  margin-bottom: 40px;
+}
+.group > p {
+  margin-bottom: 0px;
+}
+
 #page {
   position: relative;
   overflow-x: hidden;
@@ -88,6 +95,10 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+.gtco-sm-container {
+  max-width: 750px;
+  margin: auto;
 }
 
 .gtco-nav {
@@ -172,6 +183,11 @@ h1, h2, h3, h4, h5, h6, figure {
   -o-transition: 0s;
   transition: 0s;
 }
+
+.mb-8 {
+  margin-bottom: 40px;
+}
+
 .gtco-nav ul li.has-dropdown .dropdown:before {
   bottom: 100%;
   left: 40px;
@@ -372,7 +388,7 @@ h1, h2, h3, h4, h5, h6, figure {
   border-top: #fff 2px solid;
 }
 .interest-box:hover {
-  border-top: #000 2px solid;
+  border-top: hsl(36, 43%, 62%) 2px solid;
   transition: border-color .5s ease;
 }
 .interest-box h2 {
@@ -1173,7 +1189,7 @@ form label {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
-  border-radius: 6px;
+  border-radius: 2px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -1556,12 +1572,18 @@ form label {
 }
 
 #gtco-blog,
+#gtco-contact {
+  background-color: hsl(36, 43%, 96%);
+}
+
+#gtco-blog,
 #gtco-portfolio {
   padding: 3.5em 0;
 }
 
 .gtco-card-item {
   display: block;
+  background: hsl(0, 0%, 100%);
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -1646,7 +1668,7 @@ form label {
   font-size: 20px;
   font-weight: 400;
   margin: 0 0 10px 0;
-  color: #AF9272;
+  color: hsl(31, 37%, 43%);
 }
 .gtco-card-item .gtco-text span {
   color: #b3b3b3;
@@ -1674,7 +1696,7 @@ form label {
 }
 .gtco-card-item .gtco-text .gtco-category {
   font-size: 12px;
-  color: #cccccc;
+  color: hsl(31, 15%, 68%);
 }
 .gtco-card-item .gtco-text .gtco-category span {
   font-size: 12px;
@@ -2063,10 +2085,15 @@ form label {
   margin: 15px 0 !important;
   line-height: 20px;
 }
-.gtco-section .row h2 .experience-header {
-  font-size: 20px !important;
+.gtco-section .row .experience-header {
   margin-bottom: 0 !important;
   font-weight: bold;
+  color: #3a3a3a;
+}
+
+#gtco-services {
+  background: url(../images/video-bg.svg);
+  background-size: cover;
 }
 
 #gtco-services .feature-left .icon i {
