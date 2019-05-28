@@ -1907,7 +1907,8 @@ form label {
 
 #gtco-services {
   background: url(../images/video-bg.svg);
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
 }
 
 #gtco-services .feature-left .icon i {
