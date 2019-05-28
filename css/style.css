@@ -26,6 +26,7 @@ body {
 }
 .group > p {
   margin-bottom: 0px;
+  color: hsl(225, 13%, 26%);
 }
 
 #page {
@@ -33,9 +34,6 @@ body {
   overflow-x: hidden;
   width: 100%;
   height: 100%;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
 }
 .offcanvas #page:after {
   -webkit-transition: 2s;
@@ -53,9 +51,6 @@ body {
 
 a {
   color: #AF9272;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
 }
 a:hover, a:active, a:focus {
   color: #AF9272;
@@ -386,6 +381,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background-color: #fff;
   padding: 30px 20px;
   border-top: #fff 2px solid;
+  box-shadow: 0 2px 4px 0 hsla(240, 30%, 28%, 0.1);
 }
 .interest-box:hover {
   border-top: hsl(36, 43%, 62%) 2px solid;
@@ -401,7 +397,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .interest-box p {
   font-size: 14px;
-  color: #515769;
+  color: hsl(225, 13%, 26%);
   text-align: center;
   line-height: 24px;
   letter-spacing: 1px;
@@ -781,9 +777,9 @@ form label {
   margin-left: 0;
 }
 .gtco-heading p {
-  font-size: 14px;
-  line-height: 24px;
-  color: #1a1a1a;
+  font-size: 16px;
+  line-height: 1.75;
+  color: hsl(225, 13%, 26%);
 }
 @media screen and (max-width: 768px) {
   .gtco-heading p {
@@ -833,10 +829,10 @@ form label {
 }
 
 #gtco-subscribe {
-  background: #fafafa;
+  background: #fff;
 }
 #gtco-subscribe .form-control {
-  background: #fff;
+  background: hsl(36, 43%, 96%);
   color: #000;
   font-size: 16px !important;
   width: 100%;
@@ -1590,15 +1586,8 @@ form label {
   z-index: 9;
   bottom: 0;
   margin-bottom: 30px;
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
-  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
-  -ms-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
-  -o-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  border-radius: 10px;
+  box-shadow: 0 2px 4px 0 hsla(240, 30%, 28%, 0.1);
+  border-radius: 2px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -1613,33 +1602,7 @@ form label {
   z-index: 12;
   position: relative;
 }
-.gtco-card-item figure .overlay {
-  opacity: 0;
-  visibility: hidden;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.4);
-  -webkit-transition: 0.7s;
-  -o-transition: 0.7s;
-  transition: 0.7s;
-}
-.gtco-card-item figure .overlay a {
-  z-index: 12;
-  color: #fff;
-  font-size: 36px;
-  display: block;
-  position: relative;
-  margin: -45px 0 30px -15px;
-  top: calc(50% - 30px);
-  left: 50%;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
+
 .gtco-card-item img {
   z-index: 8;
   opacity: 1;
@@ -1665,10 +1628,10 @@ form label {
   text-decoration: none !important;
 }
 .gtco-card-item .gtco-text h2 {
-  font-size: 20px;
-  font-weight: 400;
   margin: 0 0 10px 0;
-  color: hsl(31, 37%, 43%);
+  color: hsl(0, 0%, 23%);
+  font-weight: bold;
+  font-size: 22px;
 }
 .gtco-card-item .gtco-text span {
   color: #b3b3b3;
@@ -1676,8 +1639,7 @@ form label {
   font-weight: 400;
 }
 .gtco-card-item .gtco-text p {
-  font-size: 12px;
-  color: #000;
+  color: hsl(225, 13%, 26%);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -1696,7 +1658,8 @@ form label {
 }
 .gtco-card-item .gtco-text .gtco-category {
   font-size: 12px;
-  color: hsl(31, 15%, 68%);
+  color: hsl(31, 5%, 68%);
+  text-transform: uppercase;
 }
 .gtco-card-item .gtco-text .gtco-category span {
   font-size: 12px;
@@ -1705,156 +1668,6 @@ form label {
   display: inline-block;
   zoom: 1;
   *display: inline;
-}
-.gtco-card-item:hover, .gtco-card-item:focus {
-  bottom: 7px;
-  text-decoration: none;
-  -webkit-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
-  -ms-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
-  -o-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
-  box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
-}
-.gtco-card-item:hover img, .gtco-card-item:focus img {
-  -webkot-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transform: scale(1.2);
-}
-.gtco-card-item:hover span.btn, .gtco-card-item:focus span.btn {
-  opacity: 1;
-  visibility: visible;
-  bottom: 0px;
-  color: #fff !important;
-  border: 2px solid #ff6540 !important;
-  background: #ff6540 !important;
-}
-.gtco-card-item:hover figure .overlay, .gtco-card-item:focus figure .overlay {
-  opacity: 1;
-  visibility: visible;
-}
-.gtco-card-item:hover figure .overlay a, .gtco-card-item:focus figure .overlay a {
-  margin-top: -15px;
-}
-.gtco-card-item:hover h2, .gtco-card-item:hover span, .gtco-card-item:focus h2, .gtco-card-item:focus span {
-  text-decoration: none !important;
-}
-
-/* Owl Override Style */
-.owl-carousel .owl-controls,
-.owl-carousel-posts .owl-controls {
-  margin-top: 0;
-}
-
-.owl-carousel .owl-controls .owl-nav .owl-next,
-.owl-carousel .owl-controls .owl-nav .owl-prev,
-.owl-carousel-posts .owl-controls .owl-nav .owl-next,
-.owl-carousel-posts .owl-controls .owl-nav .owl-prev {
-  top: 50%;
-  margin-top: -39px;
-  z-index: 9999;
-  position: absolute;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.owl-carousel-posts .owl-controls .owl-nav .owl-next,
-.owl-carousel-posts .owl-controls .owl-nav .owl-prev {
-  top: 24%;
-}
-
-.owl-carousel .owl-controls .owl-nav .owl-next,
-.owl-carousel-posts .owl-controls .owl-nav .owl-next {
-  right: 20px;
-}
-.owl-carousel .owl-controls .owl-nav .owl-next:hover,
-.owl-carousel-posts .owl-controls .owl-nav .owl-next:hover {
-  margin-right: -10px;
-}
-
-.owl-carousel .owl-controls .owl-nav .owl-prev,
-.owl-carousel-posts .owl-controls .owl-nav .owl-prev {
-  left: 20px;
-}
-.owl-carousel .owl-controls .owl-nav .owl-prev:hover,
-.owl-carousel-posts .owl-controls .owl-nav .owl-prev:hover {
-  margin-left: -10px;
-}
-
-.owl-carousel-posts .owl-controls .owl-nav .owl-next i,
-.owl-carousel-posts .owl-controls .owl-nav .owl-prev i,
-.owl-carousel-fullwidth .owl-controls .owl-nav .owl-next i,
-.owl-carousel-fullwidth .owl-controls .owl-nav .owl-prev i {
-  color: #444;
-}
-.owl-carousel-posts .owl-controls .owl-nav .owl-next:hover i,
-.owl-carousel-posts .owl-controls .owl-nav .owl-prev:hover i,
-.owl-carousel-fullwidth .owl-controls .owl-nav .owl-next:hover i,
-.owl-carousel-fullwidth .owl-controls .owl-nav .owl-prev:hover i {
-  color: #000;
-}
-
-.owl-carousel-fullwidth.gtco-light-arrow .owl-controls .owl-nav .owl-next i,
-.owl-carousel-fullwidth.gtco-light-arrow .owl-controls .owl-nav .owl-prev i {
-  color: #fff;
-}
-.owl-carousel-fullwidth.gtco-light-arrow .owl-controls .owl-nav .owl-next:hover i,
-.owl-carousel-fullwidth.gtco-light-arrow .owl-controls .owl-nav .owl-prev:hover i {
-  color: #fff;
-}
-
-@media screen and (max-width: 768px) {
-  .owl-theme .owl-controls .owl-nav {
-    display: none;
-  }
-}
-
-.owl-theme .owl-controls .owl-nav [class*="owl-"] {
-  background: none !important;
-}
-.owl-theme .owl-controls .owl-nav [class*="owl-"] i {
-  font-size: 24px;
-  background: #AF9272 !important;
-  padding: 12px;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-}
-.owl-theme .owl-controls .owl-nav [class*="owl-"]:hover i, .owl-theme .owl-controls .owl-nav [class*="owl-"]:focus i {
-  background: #AF9272 !important;
-}
-
-.owl-theme .owl-dots {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
-
-.owl-carousel-fullwidth.owl-theme .owl-dots {
-  bottom: 0;
-  margin-bottom: -2.5em;
-}
-
-.owl-theme .owl-dots .owl-dot span {
-  width: 10px;
-  height: 10px;
-  background: #AF9272;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-  border: 2px solid transparent;
-}
-.owl-theme .owl-dots .owl-dot span:hover {
-  background: none;
-  border: 2px solid #AF9272;
-}
-
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-  background: none;
-  border: 2px solid #AF9272;
 }
 
 #gtco-faq {
@@ -2089,6 +1902,8 @@ form label {
   margin-bottom: 0 !important;
   font-weight: bold;
   color: #3a3a3a;
+  font-size: 20px;
+  line-height: 1.3;
 }
 
 #gtco-services {
@@ -2103,5 +1918,15 @@ form label {
   color: #AF9272;
   font-size: 22px;
 }
-
+.py-16 {
+  padding: 0 40px;
+}
+.bf-icon {
+  font-size: 26px;
+  position: relative;
+  float: right;
+}
+.gtco-link:hover {
+  color: hsl(31, 28%, 42%);
+}
 /*# sourceMappingURL=style.css.map */
