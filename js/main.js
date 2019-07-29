@@ -46,7 +46,7 @@
 
   // Loading page
   const loaderPage = function() {
-    $('.bf-loader').fadeOut('slow');
+    $('.bf-loader').fadeOut(700);
   };
 
   const $win = $(window);
