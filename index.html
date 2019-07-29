@@ -13,7 +13,8 @@
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/icomoon.css">
   <link rel="stylesheet" href="css/bootstrap.css">
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/flexslider.css">
   <link rel="stylesheet" href="css/style.css">
   <!-- FOR IE9 below -->
@@ -24,67 +25,45 @@
 
 <body>
   <div class="gtco-loader"></div>
-  <div id="page">
+  <main id="page">
     <nav class="gtco-nav" role="navigation">
       <div class="gtco-container">
         <div class="row">
-          <div class="col-sm-2 col-xs-12">
-            <div id="gtco-logo"><a href="#welcome" class="js-gotop">BF</a></div>
-          </div>
-          <div class="col-xs-10 text-right menu-1 main-nav">
+          <div class="logo" id="gtco-logo"><a href="#welcome" class="js-gotop">Brian Francisco</a></div>
+          <div class="logo"><a href="#welcome" class="js-gotop">BF</a></div>
+          <div class="text-right main-nav">
             <ul>
-              <li class="active"><a href="#welcome" data-nav-section="home">Home</a></li>
-              <li><a href="#about" data-nav-section="about">Profile</a></li>
+              <li><a href="#about" data-nav-section="about">Me</a></li>
               <li><a href="#experience" data-nav-section="experience">Experience</a></li>
-              <li><a href="#projects" data-nav-section="projects">Projects</a></li>
+              <li><a href="#projects" data-nav-section="projects">Work</a></li>
               <li><a href="#contact" data-nav-section="contact">Contact</a></li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
-    <div id="gtco-hero" class="js-fullheight" data-section="home">
-      <div class="flexslider js-fullheight">
-        <ul class="slides">
-          <li id="cover-image" style="background-image: url(images/brian-cover2.png); display: none; top: 57px;">
-            <div class="overlay"></div>
-            <div class="container">
-              <div class="col-md-10 col-md-offset-1 col-xs-12 text-center js-fullheight slider-text">
-                <div class="slider-text-inner main-nav">
-                  <h2 style="margin: 0;"><b>Brian Francisco</b></h2>
-                  <h2 style="font-size: 22px; margin-bottom: 35px; color: #c7a674; font-weight: bold;">Web Developer</h2>
-                  <p><a href="#about" data-nav-section="about" id="about" class="btn btn-primary btn-lg">Get to know me</a></p>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="gtco-section-overflow">
-      <div class="gtco-section" id="gtco-services" style="background-size: contain; background-position: center;" data-section="about">
+    <header class="gtco-section-overflow">
+      <section class="gtco-section" id="gtco-services" style="background-size: contain; background-position: center;" data-section="about">
         <div class="gtco-container">
           <div class="row">
             <div class="col-md-8 col-md-offset-2 gtco-heading">
-              <h2 class="text-center">About Me</h2>
-              <p>I’m a front-end web developer who recently graduated from General Assembly’s WDI course where I spent 12 weeks fully immersed in learning
-                different skills such as JavaScript, Ruby on Rails, the MEAN Stack and much more. Not only did I learn the fundamentals of web
-                development, more importantly, I learned how to teach myself new technologies and remain motivated while doing so.</p>
-              <p>Before GA, I spent my time acquiring a B.S. in Marketing and creatively expressing myself through dance. Just like in dance, the ability to create something
-                out of nothing constantly challenges my creative side and makes me a better problem solver. My experience in marketing taught me to
-                keep the user's wants and needs in mind and I plan to do that when I help build or maintain any future applications. Using what I've learned from my past
-                experiences, I hope to continue growing towards front-end technologies as a Front-End Web Developer.</p>
-              <form method="get" action="Resume_BrianFrancisco_WebDeveloper.docx">
-                <button id="resume-btn" type="submit" class="btn btn-primary btn-md">Download Resume</button>
-              </form>
+              <h1 class="text-center">Hi, I'm Brian 👋</h1>
+              <h3 class="text-center">Front-End Developer.</h3>
+              <p class="text-center">I have a passion for creating beautiful, well-thought-out landing pages that provide a clear direction and joyful online experience.</p>
+              <p class="text-center"><a class="btn btn-primary" href="Resume_FrontEndDev_BrianFrancisco.docx">RESUME</a></p>
             </div>
           </div>
         </div>
-      </div>
-      <div id="gtco-contact" class="gtco-cover">
+      </section>
+      <section id="gtco-avatar">
+        <div class="gtco-avatar">
+          <img src="./images/brian_headshot.jpg" alt="brian francisco headshot">
+        </div>
+      </section>
+      <section id="gtco-contact" class="gtco-cover">
         <div class="gtco-container">
           <div class="row">
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-4 col-sm-6">
               <div class="interest-box">
                 <div class="interest-icon-box">
                   <img src="/images/web-developer-icon.png" alt="Computer symbol" class="interest-icon"></img>
@@ -93,7 +72,7 @@
                 <p>Coding pushes me to think in more ways than one. I love those moments when you figure something out after being stuck on it for hours and suddenly it just.. <i>clicks</i>.</p>
               </div>
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-4 col-sm-6">
               <div class="interest-box">
                 <div class="interest-icon-box">
                   <img src="/images/rock-climber-icon.png" alt="Rock Climber symbol" class="interest-icon"></img>
@@ -102,28 +81,19 @@
                 <p>I love climbing mostly for the same reason I love developing. They both consist of solving problems and have multiple ways to solve them. <span>(But this one gets me muscles)</span></p>
               </div>
             </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="interest-box">
-                <div class="interest-icon-box">
-                  <img src="/images/dancer-icon.png" alt="Dancer symbol" class="interest-icon"></img>
-                </div>
-                <h2>Hip-Hop Dancer</h2>
-                <p>I performed Hip-Hop choreography for 7 years. Although I recently stopped, I constantly feel the urge to get down whenever Bruno Mars starts playing.</p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-4 col-sm-6">
               <div class="interest-box">
                 <div class="interest-icon-box">
                   <img src="/images/musician-icon.png" alt="Music symbol" class="interest-icon"></img>
                 </div>
                 <h2>Musician</h2>
-                <p>I've been playing instruments since I was young. It helps me relax and escape from reality. Let me know if you're looking for someone to jam out with.</p>
+                <p>I've been playing musical instruments since I was a kid. It helps me relax and stay creative. At one point, I wanted to become a youtube star.. but that was another life.</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="gtco-section" id="gtco-portfolio" data-section="experience">
+      </section>
+      <section class="gtco-section" id="gtco-portfolio" data-section="experience">
         <div class="gtco-container gtco-sm-container">
           <div class="row">
             <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
@@ -151,7 +121,7 @@
                 <p>CSS / SASS / TailwindCSS</p>
                 <p>JavaScript / jQuery</p>
                 <p>MongoDB / Mongoose</p>
-                <p>Angular / Vue</p>
+                <p>React / Vue</p>
                 <p>Express / Node</p>
                 <p>Bootstrap / Materialize</p>
                 <p>Git / Github</p>
@@ -166,33 +136,23 @@
                 <p><i>Web Developer</i></p>
                 <p><i>2017 - Present</i></p>
               </div>
-              <div class="group">
-                <p class="experience-header">Gyu-Kaku Japanese BBQ</p>
-                <p><i>Restaurant Server</i></p>
-                <p><i>2012 - 2017</i></p>
-              </div>
-              <div class="group">
-                <p class="experience-header">Fox Event Center</p>
-                <p><i>Social Media Coordinator Intern</i></p>
-                <p><i>2013</i></p>
-              </div>
             </div>
             <div class="py-16 col-md-6 col-sm-6 col-xs-12 text-center slideInRight">
               <h2>Additional Skills</h2>
               <div class="group">
                 <p>UI/UX</p>
                 <p>Affinity Photo</p>
+                <p>Jira</p>
+                <p>Mailchimp</p>
+                <p>G Suite</p>
                 <p>Marketing</p>
-                <p>Training</p>
-                <p>Sales</p>
-                <p>Customer Service</p>
               </div>
             </div>
           </div> <!-- row end -->
         </div>
-      </div>
-    </div>
-    <div id="gtco-blog" data-section="projects">
+      </section>
+    </header>
+    <section id="gtco-blog" data-section="projects">
       <div class="gtco-container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
@@ -266,9 +226,9 @@
               <div class="gtco-text text-left">
                 <h2>Climb On Community</h2>
                 <p class="gtco-category">January 2017</p>
-                <p>Blogging website intended for rock climbers. Users can upload photos, post about various trips that they went on and follow one another.</p>
-                  <a href="https://climbon-community.herokuapp.com" class="gtco-link" target="_blank">View Project</a>
-                  <a class="gtco-link bf-icon icon-github" href="https://github.com/ibrianfrancisco/climb-on-community" target="_blank"></a>
+                <p>Blogging site intended for rock climbers. Users can upload photos, post about trips they went on and follow one another.</p>
+                <a href="https://climbon-community.herokuapp.com" class="gtco-link" target="_blank">View Project</a>
+                <a class="gtco-link bf-icon icon-github" href="https://github.com/ibrianfrancisco/climb-on-community" target="_blank"></a>
               </div>
             </div>
           </div>
@@ -281,82 +241,83 @@
                 <h2>BlackJack</h2>
                 <p class="gtco-category">December 2016</p>
                 <p>First project and experience building an app from the ground up. Created a functional blackjack game with betting included.</p>
-                  <a href="https://ibrianfrancisco.github.io/Blackjack_Project/" class="gtco-link" target="_blank">View Project</a>
-                  <a class="gtco-link bf-icon icon-github" href="https://github.com/ibrianfrancisco/Blackjack_Project" target="_blank"></a>
+                <a href="https://ibrianfrancisco.github.io/Blackjack_Project/" class="gtco-link" target="_blank">View Project</a>
+                <a class="gtco-link bf-icon icon-github" href="https://github.com/ibrianfrancisco/Blackjack_Project" target="_blank"></a>
               </div>
             </div>
           </div>
-        </div>
+        </div> <!-- end of row -->
       </div>
-    </div>
-    <div id="gtco-subscribe" data-section="contact">
+    </section>
+    <section id="gtco-subscribe" data-section="contact">
       <div class="gtco-container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
             <h2>Get In Touch!</h2>
             <h3>Got a project or opportunity you'd like to discuss? Let's Talk!</h3>
-            <h4>Fill out the form below or reach me directly at <a href="mailto:ibrianfrancisco@gmail.com?Subject=Hey%20Brian" target="_top"">ibrianfrancisco@gmail.com</a></h4>
-        </div>
-      </div>
-      <form class=" form-inline" role="form" method="POST" action="https://formspree.io/ibrianfrancisco@gmail.com">
-                <div class="row">
-                  <div class="col-md-4 col-md-offset-2 col-sm-6">
-                    <div class="form-group">
-                      <label for="name" class="sr-only">Name</label>
-                      <input type="text" class="form-control" id="name" placeholder="Name" name="name" required>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-sm-6">
-                    <div class="form-group">
-                      <label for="email" class="sr-only">Email</label>
-                      <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
-                    </div>
-                  </div>
-                </div>
-                <br>
-                <div class="row">
-                  <div class="col-md-8 col-md-offset-2 col-sm-12">
-                    <div class="form-group">
-                      <textarea rows="5" placeholder="How can I help?" name="message" class="form-control" required></textarea>
-                    </div>
-                  </div>
-                </div>
-                <br>
-                <div class="text-center">
-                  <button type="submit" id="submit" class="btn btn-danger">Send It</button>
-                </div>
-                </form>
+            <h4 style="line-height: 1.5;">Fill out the form below or reach me directly at <a href="mailto:ibrianfrancisco@gmail.com?Subject=Hey%20Brian" target="_top">ibrianfrancisco@gmail.com</a></h4>
           </div>
         </div>
-        <footer id="gtco-footer" role="contentinfo">
-          <div class="gtco-container">
-            <div class="row copyright">
-              <div class="col-md-12">
-                <ul class="gtco-social-icons text-center">
-                  <h1>Follow Me</h1>
-                  <li><a href="https://www.linkedin.com/in/ibrianfrancisco/" target="_blank"><i class="icon-linkedin"></i></a></li>
-                  <li><a href="https://www.github.com/ibrianfrancisco/" target="_blank"><i class="icon-github"></i></a></li>
-                  <li><a href="https://ibrianfrancisco.tumblr.com/" target="_blank"><i class="icon-tumblr"></i></a></li>
-                  <small class="block">&copy;2019 Brian Francisco</small>
-                </ul>
+        <form class=" form-inline" role="form" method="POST" action="https://formspree.io/ibrianfrancisco@gmail.com">
+          <div class="row">
+            <div class="col-md-4 col-md-offset-2 col-sm-6">
+              <div class="form-group">
+                <label for="name" class="sr-only">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Name" name="name" required>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="form-group">
+                <label for="email" class="sr-only">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
               </div>
             </div>
           </div>
-        </footer>
+          <br>
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-sm-12">
+              <div class="form-group">
+                <textarea rows="5" placeholder="How can I help?" name="message" class="form-control" required></textarea>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="text-center">
+            <button type="submit" id="submit" class="btn btn-danger">Send It</button>
+          </div>
+        </form>
       </div>
-      <div class="gototop js-top">
-        <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+    </section>
+  </main>
+  <footer id="gtco-footer" role="contentinfo">
+    <section class="gtco-container">
+      <div class="row copyright">
+        <div class="col-md-12">
+          <ul class="gtco-social-icons text-center">
+            <h1>Follow Me</h1>
+            <li><a href="https://www.linkedin.com/in/ibrianfrancisco/" target="_blank"><i class="icon-linkedin"></i></a></li>
+            <li><a href="https://www.github.com/ibrianfrancisco/" target="_blank"><i class="icon-github"></i></a></li>
+            <li><a href="https://ibrianfrancisco.tumblr.com/" target="_blank"><i class="icon-tumblr"></i></a></li>
+            <small class="block">&copy;2019 Brian Francisco</small>
+          </ul>
+        </div>
       </div>
-      <script src="js/jquery.min.js"></script>
-      <script src="js/jquery.easing.1.3.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/jquery.waypoints.min.js"></script>
-      <script src="js/owl.carousel.min.js"></script>
-      <script src="js/jquery.countTo.js"></script>
-      <script src="js/jquery.flexslider-min.js"></script>
-      <script src="js/jquery.magnific-popup.min.js"></script>
-      <script src="js/magnific-popup-options.js"></script>
-      <script src="js/main.js"></script>
+    </section>
+  </footer>
+  </div>
+  <div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.countTo.js"></script>
+  <script src="js/jquery.flexslider-min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/magnific-popup-options.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
