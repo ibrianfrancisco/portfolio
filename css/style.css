@@ -746,7 +746,7 @@ form label {
 }
 @media screen and (max-width: 768px) {
   .bf-heading h2 {
-    font-size: 28px;
+    font-size: 36px;
   }
 }
 .bf-heading h2:before {
@@ -824,7 +824,7 @@ form label {
   background: #fff;
 }
 #bf-subscribe .form-control {
-  background: hsl(206, 12%, 96%);
+  background: hsl(216, 33%, 97%);
   color: #212112;
   font-size: 16px !important;
   font-weight: 400;
@@ -1593,7 +1593,7 @@ form label {
 }
 
 #bf-blog {
-  background-color: hsl(206, 70%, 98%);
+  background-color: hsl(216, 33%, 97%);
 }
 #bf-contact {
   background-color: hsl(200, 29%, 10%);
@@ -1939,6 +1939,11 @@ form label {
   background: url(../images/video-bg.svg);
   background-size: contain;
   background-position: center;
+}
+@media screen and (max-width: 768px) {
+  #bf-services {
+    background: none;
+  }
 }
 
 #bf-services .feature-left .icon i {
