@@ -135,7 +135,6 @@ figure {
 .bf-nav .row {
   display: flex;
   align-items: center;
-  max-width: 992px;
   margin: 0 auto;
 }
 .bf-nav #bf-logo {
